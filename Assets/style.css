@@ -1,0 +1,12 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+.card-text{
+  font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+}
+#search {
+  background-color: gray;
+  font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+}

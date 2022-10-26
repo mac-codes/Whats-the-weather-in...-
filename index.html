@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/style.css">
+  <!-- link bootsrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="card-header" style="background-color: pink; color:cornsilk">
+      <h1 class="text-center">
+        WHAT'S THE WEATHER IN...?
+      </h1>
+    </div> 
+  </header>
+
+  <main>
+    <!-- search city -->
+    <div class="row">
+      <div class="col-lg-3" style="background-color: aliceblue">
+        <h2>Enter a city:</h2>
+        <!-- search -->
+        <form class="form-inline">
+          <div class="form-group">
+            <input type="text" class="form-control" id="searchCity">
+          </div>
+          <button type="submit" class="btn btn-primary" id="search">SEARCH
+          </button>
+        </form>
+        <!-- city list -->
+        <div id="city-list">
+          <ul class="list-group w-80" id="search-history">
+          </ul>
+        </div>
+      </div>
+      <!-- forecast cards -->
+      <div class="col-lg-8" id="weather">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title day1" style="font-size: 3em">
+              <img class="icon" id= "icon1" src="" alt="weather icon">
+            </h3>
+            <p class="card-text temp"></p>
+            <p class="card-text humidity"></p>
+            <p class="card-text wind"></p>
+            <br>
+          </div>
+        </div>
+        <!-- smaller cards -->
+        <div class="mt-5">
+          <h4>forecast</h4>
+        </div>
+        <div class="row text-white">
+          <div class="card day2 col-md-4 m-4 mg-primary" style="max-width: fit-content">
+            <div class="card-body">
+              <h5 class="card-title" id="day-2">day 2</h5>
+              <img class="icon pt-4 pb-4" id= "icon2" src="" alt="weather icon">
+            <p class="card-text" id="temp-2"></p>
+            <p class="card-text" id="hum-2"></p>
+            </div>
+          </div>
+
+          <div class="card day3 col-md-4 m-4 mg-primary" style="max-width: fit-content">
+            <div class="card-body">
+              <h5 class="card-title" id="day-3">day 3</h5>
+              <img class="icon pt-4 pb-4" id="icon3" src="" alt="weather icon">
+            <p class="card-text" id="temp-3"></p>
+            <p class="card-text" id="hum-3"></p>
+            </div>
+          </div>
+        
+
+        <div class="card day4 col-md-4 m-4 mg-primary" style="max-width: fit-content">
+          <div class="card-body">
+            <h5 class="card-title" id="day-4">day 4</h5>
+            <img class="icon pt-4 pb-4" id="icon4" src="" alt="weather icon">
+          <p class="card-text" id="temp-4"></p>
+          <p class="card-text" id="hum-4"></p>
+          </div>
+        </div>
+
+        <div class="card day5 col-md-4 m-4 mg-primary" style="max-width: fit-content">
+          <div class="card-body">
+            <h5 class="card-title" id="day-5">day 5</h5>
+            <img class="icon pt-4 pb-4" id= "icon5" src="" alt="weather icon">
+          <p class="card-text" id="temp-5"></p>
+          <p class="card-text" id="hum-5"></p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  <script src="./Assets/script.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/3ccdb1fed6.js" crossorigin="anonymous"></script>
+</body>
+</html>
